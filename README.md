@@ -5,15 +5,15 @@ Blogify is a modern full-stack blogging platform where users can publish their i
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
--User Authentication (Register / Login)  
--Create blog posts  
--View all users' posts  
--View your own posts  
--Edit your posts  
--Delete your posts  
--JWT-based route protection  
+- User Authentication (Register / Login)  
+- Create blog posts  
+- View all users' posts  
+- View your own posts  
+- Edit your posts  
+- Delete your posts  
+- JWT-based route protection  
 -Responsive UI  
 
 ---
