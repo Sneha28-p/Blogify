@@ -1,0 +1,77 @@
+.myposts-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.post-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.post-card h3 {
+  margin-bottom: 0.6rem;
+  color: #111;
+}
+
+.post-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.edit-btn {
+  background: #39384d;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #5e5b7f;
+}
+
+.delete-btn {
+  background: #c15a5a;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}

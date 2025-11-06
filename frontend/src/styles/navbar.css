@@ -1,0 +1,70 @@
+.navbar {
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #d0a954;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo span {
+  color: #38bdf8;
+  font-weight: 800;
+}
+
+.nav-right a {
+  color: #d1d5db;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #fff;
+}
+
+.nav-welcome {
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  margin-right: 1rem;
+}
+
+.logout-btn {
+  margin-left: 1rem;
+  padding: 6px 12px;
+  border: none;
+  background: #ae5252;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .nav-right a {
+    margin-left: 0.6rem;
+  }
+}

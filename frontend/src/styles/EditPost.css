@@ -1,0 +1,140 @@
+.edit-page {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 16px;
+  color: #1f2937;
+}
+
+.edit-card {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
+  padding: 32px;
+}
+
+.edit-card h2 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 4px 0 20px;
+  text-align: left;
+  color: #111827;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.edit-card input,
+.edit-card textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  color: #111827;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.edit-card input::placeholder,
+.edit-card textarea::placeholder {
+  color: #9ca3af;
+}
+
+.edit-card input:focus,
+.edit-card textarea:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.edit-card textarea {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.save-btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #628870, #386248);
+  box-shadow: 0 8px 18px rgb(69, 110, 84);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.save-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgb(128, 214, 159);
+  filter: brightness(1.02);
+}
+
+.save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.cancel-btn {
+  appearance: none;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #374151;
+  padding: 11px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: #eef2f7;
+  border-color: #cbd5e1;
+  color: #1f2937;
+}
+
+.msg {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #ef4444;
+}
+
+@media (max-width: 640px) {
+  .edit-card { padding: 22px; }
+  .edit-card h2 { font-size: 1.6rem; text-align: center; }
+  .actions { justify-content: center; }
+}
