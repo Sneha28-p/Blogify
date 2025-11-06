@@ -88,6 +88,8 @@ App runs at
 
 ---
 
+## API Endpoints
+
 | Method | Route               | Description      |
 | ------ | ------------------- | ---------------- |
 | POST   | /api/users/register | Register user    |
