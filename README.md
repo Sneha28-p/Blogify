@@ -7,14 +7,14 @@ Blogify is a modern full-stack blogging platform where users can publish their i
 
 ## 🚀 Features
 
-✅ User Authentication (Register / Login)  
-✅ Create blog posts  
-✅ View all users' posts  
-✅ View your own posts  
-✅ Edit your posts  
-✅ Delete your posts  
-✅ JWT-based route protection  
-✅ Responsive UI  
+-User Authentication (Register / Login)  
+-Create blog posts  
+-View all users' posts  
+-View your own posts  
+-Edit your posts  
+-Delete your posts  
+-JWT-based route protection  
+-Responsive UI  
 
 ---
 
@@ -88,7 +88,19 @@ App runs at
 
 ---
 
-###Future Improvements
+| Method | Route               | Description      |
+| ------ | ------------------- | ---------------- |
+| POST   | /api/users/register | Register user    |
+| POST   | /api/users/login    | Login user       |
+| POST   | /api/posts          | Create post      |
+| GET    | /api/posts          | Get all posts    |
+| GET    | /api/posts/mine     | Get user's posts |
+| PUT    | /api/posts/:id      | Update post      |
+| DELETE | /api/posts/:id      | Delete post      |
+
+---
+
+## 🚧 Future Improvements
 Image upload for posts
 Comments & likes
 User profiles
@@ -97,6 +109,6 @@ Dark mode UI
 
 ---
 
-Author
+🧑‍💻 Author
   Sneha Patted
   GitHub:@Sneha28-p
