@@ -34,13 +34,15 @@ router.get("/", async (req, res) => {
 }); 
 
 //read more of post
-router.get("/:id",protect,validateObjectId,async(req,res)=>{
+router.get("/:id",validateObjectId,async(req,res)=>{
   try{
     console.log("Fetching",req.params.id);
-    const post=await Post.findById({_id:req.params.id,user:req.user.id})
+    const post=await Post.findById(req.params.id)
       .populate("user","name email")
       .select("title content user createdAt");
-    if(!post)return res.status(404).json({message:"Post not found"});
+    if(!post){
+      return res.status(404).json({message:"Post not found"});
+    }
     res.status(200).json(post);
   }catch(err){
     console.log("Error fetching post by id",err);
