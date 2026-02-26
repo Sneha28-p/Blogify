@@ -111,6 +111,12 @@ Dark mode UI
 
 ---
 
-🧑‍💻 Author
-  Sneha Patted
-  GitHub:@Sneha28-p
+## 👩‍💻 Author
+
+Sneha Patted  
+GitHub: https://github.com/Sneha28-p  
+LinkedIn: https://www.linkedin.com/in/sneha-patted-108271338
+
+---
+
+⭐ If you found this project helpful, feel free to give it a star!
