@@ -25,11 +25,11 @@ export default function Auth() {
 
     try {
       if (isLogin) {
-        const res = await axios.post("http://localhost:5000/api/users/login", { email, password });
+        const res = await axios.post("https://blogify-0z15.onrender.com/api/users/login", { email, password });
         login(res.data.user, res.data.token);
         navigate("/", { replace: true });
       } else {
-        await axios.post("http://localhost:5000/api/users/register", { name, email, password });
+        await axios.post("https://blogify-0z15.onrender.com/api/users/register", { name, email, password });
         setMessage("Registration successful! Please login.");
         setIsLogin(true);
       }

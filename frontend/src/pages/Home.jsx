@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/posts");
+        const res = await axios.get("https://blogify-0z15.onrender.com/api/posts");
         setPosts(res.data);
       } catch (err) {
         console.error("Error loading posts:", err);

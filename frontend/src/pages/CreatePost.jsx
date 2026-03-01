@@ -12,7 +12,7 @@ export default function CreatePost() {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:5000/api/posts",
+        "https://blogify-0z15.onrender.com/api/posts",
         { title, content },
         {
           headers: { Authorization: `Bearer ${token}` },

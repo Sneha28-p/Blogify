@@ -13,7 +13,7 @@ export default function EditPost() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get(`http://localhost:5000/api/posts/${id}`, {
+      .get(`https://blogify-0z15.onrender.com/api/posts/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -36,7 +36,7 @@ export default function EditPost() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/api/posts/${id}`,
+        `https://blogify-0z15.onrender.com/api/posts/${id}`,
         { title, content },
         { headers: { Authorization: `Bearer ${token}` } }
       );

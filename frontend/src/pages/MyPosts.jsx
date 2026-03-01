@@ -11,7 +11,7 @@ export default function MyPosts() {
   const fetchPosts = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/posts/mine", {
+      const res = await axios.get("https://blogify-0z15.onrender.com/api/posts/mine", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPosts(res.data);
@@ -28,7 +28,7 @@ export default function MyPosts() {
     if (!window.confirm("Are you sure you want to delete this post?")) return;
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:5000/api/posts/${id}`, {
+      await axios.delete(`https://blogify-0z15.onrender.com/api/posts/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPosts(posts.filter((p) => p._id !== id));
