@@ -14,7 +14,7 @@ app.use(express.json({limit:"10mb"}));
 app.use(express.urlencoded({limit:"10mb",extended:true}));
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/blogify")
+  .connect(process.env.MONGO_URI)
   .then(()=>{
     console.log("Mongodb connected");
   })
